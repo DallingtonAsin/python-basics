@@ -16,13 +16,13 @@
 - Map, filter and reduce functions
 
 ## Data structures
-1. Linear data structures
+1. **Linear data structures**
   - Arrays/Lists
   - Stacks
   - Queues
   - Links
 
-2. Non-linear data structures
+2. **Non-linear data structures**
   - Trees
   - Graphs
 
