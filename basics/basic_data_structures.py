@@ -40,8 +40,6 @@ print(odd_nums)
 for index, value in enumerate(numbers):
     print(f"{index}: {value}", end=", ")
 
-
-
 print("\n")
 
 # Sets
@@ -73,6 +71,10 @@ for key, value in marks.items():
 marks['Isaac']=  88
 print(marks)
 
+# Using list comprehension to generate a list
+even_nums_dict =  {x: x*2 for x in range(6)}
+print("Dictionary of even numbers: ", even_nums_dict)
+
 # Sequence
 seq = [1,2,3,4,5]
 reversed_seq = seq[::-1]
@@ -93,3 +95,9 @@ print(even_numbers)
 from functools import reduce
 product = reduce(lambda x, y: x * y, my_numbers)
 print(product)
+
+# Using zip function
+names = ["Isaac", "Moses", "Allan", "Sandra"]
+grades = [10, 90, 77, 55]
+for name, grade in zip(names, grades):
+    print(f"{name}: {grade}")
