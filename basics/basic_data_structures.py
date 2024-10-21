@@ -53,6 +53,11 @@ for key, value in marks.items():
 marks['Isaac']=  88
 print(marks)
 
+# Sequence
+seq = [1,2,3,4,5]
+reversed_seq = seq[::-1]
+print("Reversed sequence: ", reversed_seq)
+
 # Map, Filter, and Reduce
 
 # using map function
