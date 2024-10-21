@@ -24,7 +24,7 @@ numbers = [1,2,3,4,5]
 square_nums = [x**2 for x in numbers]
 print(square_nums)
 
-# Generating a list of cube numbers using range
+# Generating a list of cube numbers using list comprehension
 cube_numbers = [x*x*x for x in range(10)]
 print(cube_numbers)
 
@@ -32,7 +32,7 @@ print(cube_numbers)
 odd_nums = list(map(lambda x: x*x*x, [x for x in range(10)]))
 print(odd_nums)
 
-# using lambda to filter odd numbers in a list
+# using lambda and filter to generate a list of odd numbers
 odd_nums = list(filter(lambda x: x%2==1, [x for x in range(10)]))
 print(odd_nums)
 
