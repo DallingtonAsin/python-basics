@@ -1,15 +1,15 @@
 # Lists
-from itertools import product
 
 animals = ["dog", "cat", "rabbit", "rabbit"]
 for animal in animals:
     print("%s" % animal, end= " ")
+print("\n")
+
 animals.remove("dog") # removes dog from the list
 animals.append("sheep") # adds sheep to the end of list
 animals.pop() # removes the most recent animal in the list
 animals.insert(1, "goat") # adds element to the second position in the list
 
-print("\n")
 print(animals)
 print("Index of element in a list: "+str(animals.index("rabbit"))) # returns index of an element
 print("Total count of an element in a list: "+str(animals.count("rabbit")))
@@ -23,6 +23,26 @@ print(animals)
 numbers = [1,2,3,4,5]
 square_nums = [x**2 for x in numbers]
 print(square_nums)
+
+# Generating a list of cube numbers using range
+cube_numbers = [x*x*x for x in range(10)]
+print(cube_numbers)
+
+# Generating a list of cube numbers using lambda and map function
+odd_nums = list(map(lambda x: x*x*x, [x for x in range(10)]))
+print(odd_nums)
+
+# using lambda to filter odd numbers in a list
+odd_nums = list(filter(lambda x: x%2==1, [x for x in range(10)]))
+print(odd_nums)
+
+# Using enumerate function
+for index, value in enumerate(numbers):
+    print(f"{index}: {value}", end=", ")
+
+
+
+print("\n")
 
 # Sets
 names = {"Truth", "Grey", "Daniel", "Samuel"}

@@ -2,6 +2,12 @@
 x = 7
 y = 8
 
+level = 5
+if 0 < level < 11:
+    print("valid")
+if level == 5 or level == 7:
+    print("special")
+
 # if else if statement
 if x > y:
     print("%d is greater than %d" % (x, y))
@@ -46,3 +52,8 @@ def divide_nums(a, b):
         print("Error: Can't divide by zero")
 
 print("\nDivide numbers using the func is %f" % divide_nums(13, 4))
+
+# Anonymous function using lambda
+multiple = lambda o,p,q: o * p * q
+a,b,c = [1,2,3]
+print("\nProduct of %d, %d, %d is %d" % (a, b, c, (multiple(a,b,c))))
